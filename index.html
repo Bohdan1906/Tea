@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240220114455">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a data-goto=".hero" href="#" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-header data-goto=".cup" href="#" class="menu__link"> About</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-header data-goto=".tea-blends" href="#" class="menu__link">Products</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto-header data-goto=".best-menu" href="#" class="menu__link">News</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__logo-container">
+					<div class="header__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img class="header__image-logo ibg" src="img/header/logo.png" alt="Logo Tea"></picture>
+					</div>
+				</div>
+				<div data-da=".menu__body, 767.98" class="header__right-menu">
+					<div class="header__add-to-cart">
+						<div class="header__link-container">
+							<a href="#" data-popup="#popup" class="header__link _icon-bag-fill-frame"><span></span>Add to Cart</a>
+						</div>
+					</div>
+					<div class="header__button-block"><button data-ripple type="submit" class="header__button button button--right-menu">contact us</button></div>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="header__popup popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__goods">
+						<div class="popup__ordered-goods">
+							<p>Ordered goods</p>
+						</div>
+						<div class="popup__header-list header__tea-blends-list-container">
+							<ul class="header__tea-blends-list tea-blends-list"></ul>
+						</div>
+						<div class="popup__total">total price: <span></span></div>
+					</div>
+					<div class="popup__body">
+						<button data-close type="button" class="popup__close button">Close</button>
+						<div class="popup__text card">
+							<form action="#">
+								<div class="card__box">
+									<input autocomplete="off" type="text" maxlength="16" data-mask="0000 0000 0000 0000" name="form[]" data-error="Помилка" placeholder="Card number" class="card__number input">
+								</div>
+								<div class="card__box">
+									<input autocomplete="off" type="text" maxlength="36" name="form[]" data-error="Помилка" placeholder="Card holder" class="card__holder input">
+								</div>
+								<div class="card__flexbox">
+									<div class="card__input-box">
+										<select name="" id="" class="card__month">
+											<option value="month" selected disabled>month</option>
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+									<div class="card__input-box">
+										<select name="" id="" class="card__year">
+											<optionvalue="month" selected disabled>year</optionvalue=>
+												<option class="card__input-box-in" value="2024">2024</option>
+												<option value="2025">2025</option> class="card__input-box-in"
+												<option value="2026">2026</option>
+												<option value="2027">2027</option>
+												<option value="2028">2028</option>
+												<option value="2029">2029</option>
+												<option value="2030">2030</option>
+												<option value="2031">2031</option>
+												<option value="2032">2032</option>
+												<option value="2033">2033</option>
+										</select>
+									</div>
+									<div class="card__input-box">
+										<input type="text" maxlength="4" placeholder="cvv" class="card__cvv">
+									</div>
+								</div>
+								<button type="submit" class="popup__button button">Buy</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<!-- hero -->
+			<section class="page__hero hero">
+				<div class="hero__slider swiper">
+					<div class="hero__wrapper swiper-wrapper">
+						<div class="hero__slide swiper-slide">
+							<div class="hero__container">
+								<div class="hero__block-header header-hero">
+									<div class="header-hero__label">tealand</div>
+									<h2 class="header-hero__title">Fresh from our tea gardens to your cup</h2>
+									<div class="header-hero__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet magna
+											semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
+											enim sit amet.</p>
+									</div>
+									<diw class="header-hero__button-container">
+										<button data-ripple type="submit" class="block-header__button button">Explore</button>
+									</diw>
+								</div>
+							</div>
+							<div class="hero__image">
+								<picture><source srcset="img/hero/01.webp" type="image/webp"><img class="hero__img ibg" src="img/hero/01.jpg" alt="Tea imagt"></picture>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<div class="hero__container">
+								<div class="hero__block-header header-hero">
+									<div class="header-hero__label">tealand</div>
+									<h2 class="header-hero__title">Fresh from our tea gardens to your cup</h2>
+									<div class="header-hero__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet magna
+											semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
+											enim sit amet.</p>
+									</div>
+									<diw class="header-hero__button-container">
+										<button data-ripple type="submit" class="block-header__button button">Explore</button>
+									</diw>
+								</div>
+							</div>
+							<div class="hero__image">
+								<picture><source srcset="img/hero/02.webp" type="image/webp"><img class="hero__img ibg" src="img/hero/02.jpg" alt="Tea imagt"></picture>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<div class="hero__container">
+								<div class="hero__block-header header-hero">
+									<div class="header-hero__label">tealand</div>
+									<h2 class="header-hero__title">Fresh from our tea gardens to your cup</h2>
+									<div class="header-hero__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet magna
+											semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
+											enim sit amet.</p>
+									</div>
+									<diw class="header-hero__button-container">
+										<button data-ripple type="submit" class="block-header__button button">Explore</button>
+									</diw>
+								</div>
+							</div>
+							<div class="hero__image">
+								<picture><source srcset="img/hero/03.webp" type="image/webp"><img class="hero__img ibg" src="img/hero/03.jpg" alt="Tea imagt"></picture>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<div class="hero__container">
+								<div class="hero__block-header header-hero">
+									<div class="header-hero__label">tealand</div>
+									<h2 class="header-hero__title">Fresh from our tea gardens to your cup</h2>
+									<div class="header-hero__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet magna
+											semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo
+											enim sit amet.</p>
+									</div>
+									<diw class="header-hero__button-container">
+										<button data-ripple type="submit" class="block-header__button button">Explore</button>
+									</diw>
+								</div>
+							</div>
+							<div class="hero__image">
+								<picture><source srcset="img/hero/04.webp" type="image/webp"><img class="hero__img ibg" src="img/hero/04.jpg" alt="Tea imagt"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero__button-pagination-container">
+					<button type="button" class="hero__button-prev">
+						<picture><source srcset="img/hero/arrow-01.webp" type="image/webp"><img src="img/hero/arrow-01.png" alt="arrow"></picture>
+					</button>
+					<div class="hero__swiper-bullets"></div>
+					<button type="button" class="hero__button-next">
+						<picture><source srcset="img/hero/arrow-01.webp" type="image/webp"><img src="img/hero/arrow-01.png" alt="arrow"></picture>
+					</button>
+				</div>
+			</section>
+			<!-- advantages -->
+			<section class="page__advantages advantages">
+				<div class="advantages__container">
+					<div data-prlx-parent class="advantages__image-block">
+						<div class="advantages__image">
+							<picture><source srcset="img/advantages/05.webp" type="image/webp"><img data-prlx class="advantages__img ibg" src="img/advantages/05.png" alt="Tea table with cup of leaf tea"></picture>
+						</div>
+					</div>
+					<div class="advantages__body">
+						<div class="advantages__block-header block-header block-header--advantages">
+							<div class="block-header__label">advantages</div>
+							<h3 class="block-header__title block-header__title--advantages">The Hidden Health Benefits of Tea
+							</h3>
+							<div class="block-header__text block-header__text--advantages">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet magna
+									semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit
+									amet.</p>
+							</div>
+							<diw class="advantages__button-container">
+								<button data-ripple type="submit" class="advantages__button button">Explore</button>
+							</diw>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- science -->
+			<section class="page__science science">
+				<div class="science__container">
+					<div class="science__block-header block-header block-header--science">
+						<div class="block-header__label">Since 2022</div>
+						<h3 class="block-header__title block-header__title--science">why choose us</h3>
+						<div class="block-header__text block-header__text--science">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet magna semper
+								lacinia. Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+					<div class="science__body">
+						<div class="science__item">
+							<div class="science__image">
+								<picture><source srcset="img/science/01.webp" type="image/webp"><img class="science__img ibg" src="img/science/01.png" alt="Mountine and tea"></picture>
+							</div>
+							<div class="science__title">organic Products</div>
+						</div>
+						<div class="science__item">
+							<div class="science__image">
+								<picture><source srcset="img/science/02.webp" type="image/webp"><img class="science__img ibg" src="img/science/02.png" alt="Cup of tea"></picture>
+							</div>
+							<div class="science__title">organic Products</div>
+						</div>
+						<div class="science__item">
+							<div class="science__image">
+								<picture><source srcset="img/science/03.webp" type="image/webp"><img class="science__img ibg" src="img/science/03.png" alt="Tea leaf"></picture>
+							</div>
+							<div class="science__title">organic Products</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- tea-blends -->
+			<section class="page__tea-blends tea-blends">
+				<div class="tea-blends__container">
+					<div class="tea-blends__head">
+						<h3 class="tea-blends__title">Our Unique Tea Blends</h3>
+						<div class="tea-blends__buttons">
+							<button type="button" class="tea-blends__button-prev _icon-arrow-left"></button>
+							<button type="button" class="tea-blends__button-next _icon-arrow-right"></button>
+						</div>
+					</div>
+					<div class="tea-blends__slider swiper">
+						<div class="tea-blends__wrapper swiper-wrapper">
+							<div class="tea-blends__slide swiper-slide">
+								<div data-pid="1" class="tea-blends__item">
+									<div class="tea-blends__image">
+										<picture><source srcset="img/tea-blendes/01.webp" type="image/webp"><img class="tea-blends__img ibg" src="img/tea-blendes/01.png" alt="Gynostemma Tea"></picture>
+									</div>
+									<div class="tea-blends__bottom">
+										<div class="tea-blends__name">gynostemma tea</div>
+										<div class="tea-blends__bag-batton _icon-bag-fill-frame"></div>
+									</div>
+									<div class="tea-blends__hover hover-item-blends">
+										<div class="hover-item-blends__body">
+											<div class="hover-item-blends__title">gynostemma tea</div>
+											<div class="hover-item-blends__text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+											</div>
+											<div class="hover-item-blends__bag-batton">
+												<button type="submit" class="hover-item-blends__button-bag button-bag button-bag--big _icon-bag-fill-frame"></button>
+											</div>
+										</div>
+										<div class="hover-item-blends__footer">
+											<div class="hover-item-blends__stock">In stock</div>
+											<div class="hover-item-blends__prices">
+												<div class="hover-item-blends__old-price">15$</div>
+												<div class="hover-item-blends__price">13.80$</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tea-blends__slide swiper-slide">
+								<div data-pid="2" class="tea-blends__item">
+									<div class="tea-blends__image">
+										<picture><source srcset="img/tea-blendes/02.webp" type="image/webp"><img class="tea-blends__img ibg" src="img/tea-blendes/02.png" alt="Oolong Tea"></picture>
+									</div>
+									<div class="tea-blends__bottom">
+										<div class="tea-blends__name">oolong tea</div>
+										<div class="tea-blends__bag-batton _icon-bag-fill-frame"></div>
+									</div>
+									<div class="tea-blends__hover hover-item-blends">
+										<div class="hover-item-blends__body">
+											<div class="hover-item-blends__title">oolong tea</div>
+											<div class="hover-item-blends__text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+											</div>
+											<div class="hover-item-blends__bag-batton">
+												<button type="submit" class="hover-item-blends__button-bag button-bag button-bag--big _icon-bag-fill-frame"></button>
+											</div>
+										</div>
+										<div class="hover-item-blends__footer">
+											<div class="hover-item-blends__stock">In stock</div>
+											<div class="hover-item-blends__prices">
+												<div class="hover-item-blends__old-price">15$</div>
+												<div class="hover-item-blends__price">14.30$</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tea-blends__slide swiper-slide">
+								<div data-pid="3" class="tea-blends__item">
+									<div class="tea-blends__image">
+										<picture><source srcset="img/tea-blendes/03.webp" type="image/webp"><img class="tea-blends__img ibg" src="img/tea-blendes/03.png" alt="Green Tea"></picture>
+									</div>
+									<div class="tea-blends__bottom">
+										<div class="tea-blends__name">green tea</div>
+										<div class="tea-blends__bag-batton _icon-bag-fill-frame"></div>
+									</div>
+									<div class="tea-blends__hover hover-item-blends">
+										<div class="hover-item-blends__body">
+											<div class="hover-item-blends__title">green tea</div>
+											<div class="hover-item-blends__text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+											</div>
+											<div class="hover-item-blends__bag-batton">
+												<button type="submit" class="hover-item-blends__button-bag button-bag button-bag--big _icon-bag-fill-frame"></button>
+											</div>
+										</div>
+										<div class="hover-item-blends__footer">
+											<div class="hover-item-blends__stock">In stock</div>
+											<div class="hover-item-blends__prices">
+												<div class="hover-item-blends__old-price">12$</div>
+												<div class="hover-item-blends__price">9.80$</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tea-blends__hover hover-item-blends">
+									<div class="hover-item-blends__body">
+										<div class="hover-item-blends__title">green tea</div>
+										<div class="hover-item-blends__text">
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+										</div>
+										<div class="hover-item-blends__bag-batton">
+											<button type="submit" class="hover-item-blends__button-bag button-bag button-bag--big _icon-bag-fill-frame"></button>
+										</div>
+									</div>
+									<div class="hover-item-blends__footer">
+										<div class="hover-item-blends__stock">In stock</div>
+										<div class="hover-item-blends__prices">
+											<div class="hover-item-blends__old-price">12$</div>
+											<div class="hover-item-blends__price">9.90$</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tea-blends__slide swiper-slide">
+								<div data-pid="4" class="tea-blends__item">
+									<div class="tea-blends__image">
+										<picture><source srcset="img/tea-blendes/04.webp" type="image/webp"><img class="tea-blends__img ibg" src="img/tea-blendes/04.png" alt="Gerbal Tea"></picture>
+									</div>
+									<div class="tea-blends__bottom">
+										<div class="tea-blends__name">herbal tea</div>
+										<div class="tea-blends__bag-batton _icon-bag-fill-frame"></div>
+									</div>
+									<div class="tea-blends__hover hover-item-blends">
+										<div class="hover-item-blends__body">
+											<div class="hover-item-blends__title">herbal tea</div>
+											<div class="hover-item-blends__text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+											</div>
+											<div class="hover-item-blends__bag-batton">
+												<button type="submit" class="hover-item-blends__button-bag button-bag button-bag--big _icon-bag-fill-frame"></button>
+											</div>
+										</div>
+										<div class="hover-item-blends__footer">
+											<div class="hover-item-blends__stock">In stock</div>
+											<div class="hover-item-blends__prices">
+												<div class="hover-item-blends__old-price">17$</div>
+												<div class="hover-item-blends__price">15.10$</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tea-blends__slide swiper-slide">
+								<div data-pid="5" class="tea-blends__item">
+									<div class="tea-blends__image">
+										<picture><source srcset="img/tea-blendes/01.webp" type="image/webp"><img class="tea-blends__img ibg" src="img/tea-blendes/01.png" alt="Gynostemma Tea"></picture>
+									</div>
+									<div class="tea-blends__bottom">
+										<div class="tea-blends__name">gynostemma tea</div>
+										<div class="tea-blends__bag-batton _icon-bag-fill-frame"></div>
+									</div>
+									<div class="tea-blends__hover hover-item-blends">
+										<div class="hover-item-blends__body">
+											<div class="hover-item-blends__title">gynostemma tea</div>
+											<div class="hover-item-blends__text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+											</div>
+											<div class="hover-item-blends__bag-batton">
+												<button type="submit" class="hover-item-blends__button-bag button-bag button-bag--big _icon-bag-fill-frame"></button>
+											</div>
+										</div>
+										<div class="hover-item-blends__footer">
+											<div class="hover-item-blends__stock">In stock</div>
+											<div class="hover-item-blends__prices">
+												<div class="hover-item-blends__old-price">15$</div>
+												<div class="hover-item-blends__price">13.80$</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- menu -->
+			<section data-prlx-parent class="page__best-menu best-menu">
+				<div class="best-menu__container">
+					<div class="best-menu__block-body">
+						<div class="best-menu__body">
+							<div class="best-menu__block-header block-header">
+								<div class="block-header__label block-header__label--best-menu">house of tea</div>
+								<h3 class="block-header__title">our best menu </h3>
+							</div>
+							<div class="best-menu__tea-menu tea-menu">
+								<div class="tea-menu__block">
+									<div class="tea-menu__top">
+										<div class="tea-menu__name">Oolong Tea</div>
+										<div class="tea-menu__price">$19.85</div>
+									</div>
+									<div class="tea-menu__description">Theme nullam quis ante velit</div>
+								</div>
+								<div class="tea-menu__block">
+									<div class="tea-menu__top">
+										<div class="tea-menu__name">Matcha</div>
+										<div class="tea-menu__price">$19.00</div>
+									</div>
+									<div class="tea-menu__description">Theme nullam quis ante velit</div>
+								</div>
+								<div class="tea-menu__block">
+									<div class="tea-menu__top">
+										<div class="tea-menu__name">Rooibos Tea</div>
+										<div class="tea-menu__price">$39.39</div>
+									</div>
+									<div class="tea-menu__description">Theme nullam quis ante velit</div>
+								</div>
+								<div class="tea-menu__block">
+									<div class="tea-menu__top">
+										<div class="tea-menu__name">Chamomile</div>
+										<div class="tea-menu__price">$42.09</div>
+									</div>
+									<div class="tea-menu__description">Theme nullam quis ante velit</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="best-menu__image-block image-menu">
+						<div class="image-menu__image">
+							<picture><source srcset="img/menu/01.webp" type="image/webp"><img data-prlx class="image-menu__img ibg" src="img/menu/01.png" alt="Two cups of tea and tea leaf"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- cup -->
+			<section data-prlx-parent class="page__cup cup">
+				<div class="cup__container">
+					<h3 class="cup__title">“Sometimes all you need is a good cup of Tea”</h3>
+					<div class="cup__body">
+						<div class="cup__images images-cup">
+							<div class="images-cup__image">
+								<picture><source srcset="img/cup/01.webp" type="image/webp"><img data-prlx class="images-cup__img ibg" src="img/cup/01.png" alt="Black tea wrapper and two cup with tea"></picture>
+							</div>
+							<div class="images-cup__image">
+								<picture><source srcset="img/cup/02.webp" type="image/webp"><img data-prlx class="images-cup__img ibg" src="img/cup/02.png" alt="White tea wrapper and one cup with tea"></picture>
+							</div>
+						</div>
+						<div class="cup__info info-cup">
+							<div class="info-cup__body">
+								<div class="info-cup__item">
+									<h4 class="info-cup__title-item">100% Organic</h4>
+									<div class="info-cup__text">
+										<p>Et malesuada fames ac turpis egestas maecenas pharetra convallis met nisl purus.</p>
+									</div>
+								</div>
+								<div class="info-cup__item">
+									<h4 class="info-cup__title-item">High Quality</h4>
+									<div class="info-cup__text">
+										<p>Et malesuada fames ac turpis egestas maecenas pharetra convallis met nisl purus.</p>
+									</div>
+								</div>
+								<div class="info-cup__item">
+									<h4 class="info-cup__title-item">Always Fresh</h4>
+									<div class="info-cup__text">
+										<p>Et malesuada fames ac turpis egestas maecenas pharetra convallis met nisl purus.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- art-of-tea -->
+			<section data-prlx-parent class="page__art-of-tea art-of-tea">
+				<div class="art-of-tea__container">
+					<div class="art-of-tea__label-title">Best seller</div>
+					<h3 class="art-of-tea__title">We Believe in Perfection in the art of Tea. </h3>
+					<div class="art-of-tea__body">
+						<div class="art-of-tea__left-side left-side-art">
+							<div class="left-side-art__body">
+								<div class="left-side-art__items-left">
+									<div class="left-side-art__item">
+										<div class="left-side-art__image">
+											<picture><source srcset="img/art-of-tea/l-01.webp" type="image/webp"><img class="left-side-art__img ibg" src="img/art-of-tea/l-01.png" alt="Logo star"></picture>
+										</div>
+										<div class="left-side-art__label">great quality</div>
+									</div>
+									<div class="left-side-art__item">
+										<div class="left-side-art__image">
+											<picture><source srcset="img/art-of-tea/l-02.webp" type="image/webp"><img class="left-side-art__img ibg" src="img/art-of-tea/l-02.png" alt="Logo box"></picture>
+										</div>
+										<div class="left-side-art__label">worldwide shipping</div>
+									</div>
+									<div class="left-side-art__item">
+										<div class="left-side-art__image">
+											<picture><source srcset="img/art-of-tea/l-03.webp" type="image/webp"><img class="left-side-art__img ibg" src="img/art-of-tea/l-03.png" alt="Logo bag"></picture>
+										</div>
+										<div class="left-side-art__label">Best seller</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="art-of-tea__image-block image-block-art">
+							<div class="image-block-art__image-bundle">
+								<picture><source srcset="img/art-of-tea/01.webp" type="image/webp"><img data-prlx class="image-block-art__img-bundle ibg" src="img/art-of-tea/01.png" alt="Bundle of tea"></picture>
+							</div>
+							<div class="image-block-art__image-leaf">
+								<picture><source srcset="img/art-of-tea/02.webp" type="image/webp"><img data-prlx class="image-block-art__img-leaf ibg" src="img/art-of-tea/02.png" alt="Leaf of tea"></picture>
+							</div>
+						</div>
+						<div class="art-of-tea__right-side right-side-art">
+							<div class="right-side-art__body">
+								<div class="right-side-art__items">
+									<div class="right-side-art__item">
+										<div class="right-side-art__label">Organic Product</div>
+										<div class="right-side-art__image">
+											<picture><source srcset="img/art-of-tea/r-01.webp" type="image/webp"><img class="right-side-art__img ibg" src="img/art-of-tea/r-01.png" alt="Logo star"></picture>
+										</div>
+									</div>
+									<div class="right-side-art__item">
+										<div class="right-side-art__label">loyal-tea rewards</div>
+										<div class="right-side-art__image">
+											<picture><source srcset="img/art-of-tea/r-02.webp" type="image/webp"><img class="right-side-art__img ibg" src="img/art-of-tea/r-02.png" alt="Logo box"></picture>
+										</div>
+									</div>
+									<div class="right-side-art__item">
+										<div class="right-side-art__label">eco package</div>
+										<div class="right-side-art__image">
+											<picture><source srcset="img/art-of-tea/r-03.webp" type="image/webp"><img class="right-side-art__img ibg" src="img/art-of-tea/r-03.png" alt="Logo bag"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- gallery -->
+			<section data-prlx-parent class="page__gallery gallery">
+				<div class="gallery__container">
+					<div class="gallery__top-block">
+						<div class="gallery__header-block">
+							<div class="gallery__label">our gallery</div>
+							<div class="gallery__title">You Too Can Have A Tea Like Mine</div>
+						</div>
+						<div class="gallery__button-block">
+							<button type="submit" class="gallery__button button">Explore</button>
+						</div>
+					</div>
+					<div class="gallery__body body-gallery">
+						<div class="body-gallery__image">
+							<picture><source srcset="img/gallery/01.webp" type="image/webp"><img data-prlx class="body-gallery__img-big ibg" src="img/gallery/01.png" alt="Tea infuser and cup of tea"></picture>
+						</div>
+						<div class="body-gallery__image">
+							<picture><source srcset="img/gallery/02.webp" type="image/webp"><img data-prlx class="body-gallery__img-small ibg" src="img/gallery/02.png" alt="Glass cup of tea"></picture>
+						</div>
+						<div class="body-gallery__image">
+							<picture><source srcset="img/gallery/03.webp" type="image/webp"><img data-prlx class="body-gallery__img-big ibg" src="img/gallery/03.png" alt="Six cups of tea"></picture>
+						</div>
+					</div>
+				</div>
+				<div class="gallery__gallery-body gallery-body">
+					<div data-gallery class="gallery-body__gallery-items">
+						<a class="gallery-body__image" href="img/gallery/g-01.png">
+							<picture><source data-srcset="img/gallery/g-01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-body__img ibg" data-src="img/gallery/g-01.png" loading="lazy" alt="Tea"></picture>
+						</a>
+						<a class="gallery-body__image" href="img/gallery/g-02.png">
+							<picture><source data-srcset="img/gallery/g-02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-body__img ibg" data-src="img/gallery/g-02.png" loading="lazy" alt="Tea"></picture>
+						</a>
+						<a class="gallery-body__image" href="img/gallery/g-03.png">
+							<picture><source data-srcset="img/gallery/g-03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-body__img ibg" data-src="img/gallery/g-03.png" loading="lazy" alt="Tea"></picture>
+						</a>
+						<a class="gallery-body__image" href="img/gallery/g-04.png">
+							<picture><source data-srcset="img/gallery/g-04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-body__img ibg" data-src="img/gallery/g-04.png" loading="lazy" alt="Tea"></picture>
+						</a>
+						<a class="gallery-body__image" href="img/gallery/g-05.png">
+							<picture><source data-srcset="img/gallery/g-05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-body__img ibg" data-src="img/gallery/g-05.png" loading="lazy" alt="Tea"></picture>
+						</a>
+						<a class="gallery-body__image" href="img/gallery/g-01.png">
+							<picture><source data-srcset="img/gallery/g-01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="gallery-body__img ibg" data-src="img/gallery/g-01.png" loading="lazy" alt="Tea"></picture>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!--  -->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__contacts contacts-footer">
+						<div class="contacts-footer__body">
+							<h3 class="contacts-footer__title">get in touch</h3>
+							<div class="contacts-footer__phone">
+								<a class="contacts-footer__phone" href="tel:+0123456789">+012-345-6789</a>
+							</div>
+							<div class="contacts-footer__mail">
+								<a class="contacts-footer__email" href="email:tealand@contact.com">tealand@contact.com</a>
+							</div>
+							<div class="contacts-footer__adres">9889 lorem ipsum street, Pellentesque, CA, uSA</div>
+						</div>
+					</div>
+					<div class="footer__logo-social logo-social">
+						<div class="logo-social__logo">
+							<picture><source srcset="img/footer/logo.webp" type="image/webp"><img class="logo-social__img ibg" src="img/footer/logo.png" alt="Logo Tea"></picture>
+						</div>
+						<div class="logo-social__social">
+							<div class="logo-social__item">
+								<a class="logo-social__link _icon-tw" href="#"></a>
+							</div>
+							<div class="logo-social__item">
+								<a class="logo-social__link _icon-in" href="#"></a>
+							</div>
+							<div class="logo-social__item">
+								<a class="logo-social__link _icon-tik-tok" href="#"></a>
+							</div>
+							<div class="logo-social__item">
+								<a class="logo-social__link _icon-medium" href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__timetable timetable-footer">
+						<div class="timetable-footer__body">
+							<h3 class="timetable-footer__title">working our</h3>
+							<div class="timetable-footer__weekdays">Monday/Friday 9:00-23:00</div>
+							<div class="timetable-footer__saturday">Saturday 10:00-21:00</div>
+							<div class="timetable-footer__weekend">Weekend Closed</div>
+						</div>
+						<div class="timetable-footer__arrow-body">
+							<a data-goto=".hero" class="timetable-footer__link-arrow" href="#">
+								<picture><source srcset="img/footer/arrow-back.webp" type="image/webp"><img class="timetable-footer__arrow-back" src="img/footer/arrow-back.png" alt="Arrow back"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__container-bottom">
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__copyright">Copyright Dotcreativemarket</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240220114455"></script>
+</body>
+
+</html>
